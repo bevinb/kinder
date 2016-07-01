@@ -1,0 +1,238 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>账号信息-智汇</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/common.css -->
+    <link rel="stylesheet" href="styles/common.css">
+    <!-- endbuild -->
+
+    <!-- build:css styles/account_detail.css -->
+    <link rel="stylesheet" href="styles/account_detail.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container flex-container-column">
+    <div class="main-container flx flex-container-row">
+        <aside class="left-container"></aside>
+        <section class="right-container flx flex-container-column">
+            <header></header>
+            <section class="content-container flx">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#accountTab" aria-controls="home" role="tab" data-toggle="tab">账号信息</a></li>
+                    <li role="presentation"><a href="#passwordTab" aria-controls="profile" role="tab" data-toggle="tab">密码修改</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="accountTab">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="sub-tab-view">
+                                    <div class="clearfix">
+                                        <h5 class="pull-left">个人信息</h5>
+                                        <div class="action-bar pull-right">
+                                            <a class="action-edit"></a>
+                                        </div>
+                                    </div>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">账号</label>
+                                            <div class="col-sm-7 text-control">87623456</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">真实姓名</label>
+                                            <div class="col-sm-7 text-control">易拉宝</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">邮箱</label>
+                                            <div class="col-sm-7 text-control">sasa2233@qq.com</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">手机</label>
+                                            <div class="col-sm-7 text-control">13112345678</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">性别</label>
+                                            <div class="col-sm-7 text-control">女</div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="sub-tab-edit">
+                                    <h5>个人信息</h5>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="oldPwd" class="col-sm-2 control-label">账号</label>
+                                            <div class="col-sm-7 text-control">87623456</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="userNameInput" class="col-sm-2 control-label">真实姓名</label>
+                                            <div class="col-sm-7">
+                                                <input type="password" class="form-control" id="userNameInput">
+                                            </div>
+                                            <div class="col-sm-3 error-msg"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailInput" class="col-sm-2 control-label">邮箱</label>
+                                            <div class="col-sm-7">
+                                                <input type="email" class="form-control" id="emailInput">
+                                            </div>
+                                            <div class="col-sm-3 error-msg"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phoneNoInput" class="col-sm-2 control-label">手机</label>
+                                            <div class="col-sm-7">
+                                                <input type="password" class="form-control" id="phoneNoInput">
+                                            </div>
+                                            <div class="col-sm-3 error-msg"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">性别</label>
+                                            <div class="col-sm-7">
+                                                <label class="radio-inline"><input name="sex" type="radio" value="0" checked>男</label>
+                                                <label class="radio-inline"><input name="sex" type="radio" value="1" >女</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-t-60">
+                                            <button class="btn-default m-r-36" id="cancelEditInfoBtn">取消</button>
+                                            <button class="btn-primary" id="saveInfoBtn">确定</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="sub-pane-photo">
+                                    <img class="photo" src="images/login/administrator.png">
+                                    <div>
+                                        <button class="btn-default" id="selectPhotoBtn">修改头像</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="passwordTab">
+                        <h5>修改密码</h5>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="oldPwd" class="col-sm-2 control-label">原始密码</label>
+                                <div class="col-sm-7">
+                                    <input type="password" class="form-control" id="oldPwd">
+                                </div>
+                                <div class="col-sm-3 error-msg"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newPwd" class="col-sm-2 control-label">新密码</label>
+                                <div class="col-sm-7">
+                                    <input type="password" class="form-control" id="newPwd">
+                                </div>
+                                <div class="col-sm-3 error-msg"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPwd" class="col-sm-2 control-label">重复密码</label>
+                                <div class="col-sm-7">
+                                    <input type="password" class="form-control" id="confirmPwd">
+                                </div>
+                                <div class="col-sm-3 error-msg"></div>
+                            </div>
+                            <div class="form-group text-center m-t-60">
+                                <button class="btn-primary" id="updatePwdBtn">确定</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <footer></footer>
+</div>
+
+
+<!-- dialog begin -->
+<div class="dialog">
+    <div class="update-photo-dialog">
+        <div class="dialog-title">
+            <div class="title-txt">修改头像</div>
+            <img class="dialog-close" src="images/popup_win/close.png">
+        </div>
+        <div class="dialog-content">
+            <div class="line uploader">
+                <span class="txt1">选择图片</span>
+                <input type="text" class="file-url">
+                <div class="upload-button">
+                    <input type="file" name="">
+                    <button>浏览</button>
+                </div>
+                <p>jpg/png格式，图片大小2M内</p>
+            </div>
+            <div class="row preview">
+                <div class="col-sm-6 photo-uploader-wrapper">
+                    <div class="photo-uploader">
+                        <img src="images/login/administrator.png">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="big-photo-preview">
+                        <img src="images/login/administrator.png">
+                        <p>大尺寸200*200像素</p>
+                    </div>
+                    <div class="small-photo-preview">
+                        <img src="images/login/administrator.png">
+                        <p>小尺寸48*48像素</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line confirm m-t-20">
+                <button>确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- dialog end -->
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/common.js -->
+<script src="scripts/common.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/account_detail.js -->
+<script src="scripts/account_detail.js"></script>
+<!-- endbuild -->
+</body>
+</html>

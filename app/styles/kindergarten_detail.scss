@@ -1,0 +1,70 @@
+@import "variable";
+
+.content-container{
+  .back a{
+    line-height: 60px;
+    font-size: 14px;
+    color: #a4a4a4;
+  }
+  .agency-info-container{
+    height: 170px;
+    width: 100%;
+    border-left: 3px solid #9dcd37;
+    background-color: #FFFFFF;
+
+    .agency-title{
+      padding:60px;
+      float: left;
+      height: 100%;
+      //width: 400px;
+      width:33%;
+
+      .agency-title-txt{
+        float: left;
+
+        h3{
+          margin: 0 0 0 30px;
+          padding: 0;
+          font-size: 18px;
+          font-weight: normal;
+          color: #717171;
+        }
+        h4{
+          margin: 15px 0 0 30px;
+          font-size: 14px;
+          color: #97b950;
+          font-weight: normal;
+        }
+      }
+
+      img{
+        float: left;
+      }
+    }
+    .agency-info{
+      float: left;
+      height: 100%;
+      padding: 20px 0;
+
+      ul{
+        list-style-type: none;
+        padding: 0 0 0 60px;
+
+        li{
+          line-height: 65px;
+          float: left;
+          margin-right: 65px;
+          //width: 340px;
+          width:33%;
+          font-size: 14px;
+          color: #a4a4a4;
+
+          img, span{
+            margin-right: 20px;
+          }
+
+        }
+      }
+    }
+  }
+}

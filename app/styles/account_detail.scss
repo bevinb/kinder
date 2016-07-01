@@ -1,0 +1,187 @@
+@import "variable";
+
+.nav-tabs {
+  margin-top:60px;
+  border-bottom: 0;
+  > li {
+    > a {
+      font-size: 18px;
+      color: $blue;
+      margin-right: 0;
+      width:175px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border: 1px solid transparent;
+      border-radius: 0;
+      background-color: #fff;
+      padding: 0;
+      &:hover, &:focus {
+        color: #fff;
+        background-color: $blue;
+      }
+    }
+
+    &.active {
+      >a, >a:hover, >a:focus {
+        color: #fff;
+        background-color: $blue;
+        border: 1px solid transparent;
+        border-bottom-color: transparent
+      }
+    }
+  }
+}
+
+.form-horizontal {
+  .control-label {
+    text-align: left;
+    font-weight: normal;
+    color: #717171;
+  }
+
+  .text-control {
+    line-height: 40px;
+    color:#a7a7a7;
+  }
+
+  input.form-control {
+    height: 40px;
+    border-radius: 0;
+    box-shadow: none;
+    border:1px solid #bdbdbd;
+  }
+  .btn-confirm {
+    width:175px;
+    height:60px;
+    font-size: 18px;
+    border-radius: 0;
+  }
+}
+
+.content-container {
+  padding-bottom:60px;
+  .tab-content {
+    min-height: 400px;
+    background-color: #fff;
+    .tab-pane {
+      padding:70px;
+      h5 {
+        font-size: 18px;
+        margin-bottom:40px;
+        color:$blue;
+      }
+    }
+  }
+}
+
+#accountTab {
+  .sub-tab-view {
+    display: block;
+  }
+  .sub-tab-edit {
+    display: none;
+  }
+  .sub-pane-photo {
+    text-align: center;
+    width:100%;
+    border-left:1px dashed $blue;
+    height: 100%;
+    .photo {
+      width:200px;
+      height:200px;
+      border-radius: 50%;
+      border:1px solid #bdbdbd;
+      margin-bottom:60px;
+    }
+  }
+
+  &.edit-mode {
+    .sub-tab-view {
+      display: none;
+    }
+    .sub-tab-edit {
+      display: block;
+    }
+  }
+}
+
+#passwordTab {
+  form {
+    width: 600px;
+  }
+}
+
+.dialog {
+  .update-photo-dialog {
+    height: 592px;
+    .dialog-content {
+      padding:40px 60px;
+      .line {
+        &.uploader {
+          margin-bottom: 10px;
+          .file-url {
+            width: 400px;
+          }
+          .upload-button {
+            margin-left:20px;
+          }
+          p {
+            padding-left: 90px;
+          }
+        }
+        &.confirm {
+          button {
+            width:200px;
+          }
+        }
+      }
+    }
+    .preview {
+      margin:0 -80px;
+      .photo-uploader-wrapper {
+        height: 300px;
+        border-right: 1px dashed #fff;
+        .photo-uploader {
+          margin-left:50px;
+          margin-top:15px;
+          width:270px;
+          height:270px;
+          background-color: #fff;
+          text-align: center;
+          img {
+            max-width:100%;
+            max-height:100%;
+          }
+        }
+      }
+    }
+    .big-photo-preview, .small-photo-preview {
+      float: left;
+      text-align: center;
+      p {
+        margin-top: 20px;
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+    .big-photo-preview {
+      margin-top: 25px;
+      width: 200px;
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+    }
+    .small-photo-preview {
+      margin-top: 101px;;
+      width: 120px;
+      img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

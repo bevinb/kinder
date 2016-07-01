@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>课程管理-智汇</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/common.css -->
+    <link rel="stylesheet" href="styles/common.css">
+    <!-- endbuild -->
+    <!-- build:css styles/course.css -->
+    <link rel="stylesheet" href="styles/course.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container flex-container-column">
+    <div class="main-container flx flex-container-row">
+        <aside class="left-container"></aside>
+        <section class="right-container flx flex-container-column">
+            <header></header>
+            <section class="content-container flx">
+                <div class="search">
+                    <div class="search-container">
+                        <div class="search-input-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control round-input" placeholder="输入关键字">
+                                <img class="search-icon" src="images/agency/search.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agency-count">
+                        共<span>123212</span>门课程
+                    </div>
+                </div>
+                <div class="course-list">
+                    <div class="course-item add-course-container">
+                        <img src="images/course_list/books.png">
+                        <br>
+                        +添加新课程
+                    </div>
+                    <div class="course-item course">
+                        <a href="course_detail.html">
+                            <img class="course-cover" src="images/course_list/demo.png">
+                            <h5 class="course-title">贝瓦儿歌</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="paging-bar">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">100</a></li>
+                        </ul>
+                    </nav>
+                    <span class="paging-txt">跳转到</span>
+                    <span class="paging-input"><input></span>
+                    <span><button>GO</button></span>
+                </div>
+            </section>
+        </section>
+    </div>
+    <footer></footer>
+</div>
+
+<!-- dialog begin -->
+<div class="dialog">
+    <div class="add-course-dialog">
+        <div class="dialog-title">
+            <div class="title-txt">添加课程</div>
+            <img class="dialog-close" src="images/popup_win/close.png">
+        </div>
+        <div class="dialog-content">
+            <div class="line title">
+                <span>课程名称</span>
+                <input type="text" class="course-name">
+            </div>
+            <div class="line description">
+                <span>课程简介</span>
+                <textarea class="course-intro"></textarea>
+            </div>
+            <div class="line uploader">
+                <span class="txt1">上传盒子端展示图</span>
+                <input type="text" class="file-url">
+                <div class="upload-button">
+                    <input type="file" name="">
+                    <button>浏览</button>
+                </div>
+                <p>jpg/png格式，图片大小2M内</p>
+            </div>
+            <div class="line uploader">
+                <span class="txt1">上传手机端展示图</span>
+                <input type="text" class="file-url">
+                <div class="upload-button">
+                    <input type="file" name="">
+                    <button>浏览</button>
+                </div>
+                <p>jpg/png格式，图片大小2M内</p>
+            </div>
+            <div class="line confirm">
+                <button>确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- dialog end -->
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/common.js -->
+<script src="scripts/common.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/course.js -->
+<script src="scripts/course.js"></script>
+<!-- endbuild -->
+</body>
+</html>

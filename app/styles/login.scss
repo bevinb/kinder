@@ -1,0 +1,138 @@
+body {
+  background-image: url("../images/login/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+
+    header {
+      padding: 30px 0 0 50px;
+    }
+    .main {
+      margin-top: 100px;
+
+      .login-wrapper {
+        width: 758px;
+        margin: 0 auto;
+
+        .role-container {
+          width: 203px;
+          float: left;
+
+          .role {
+            display: none;
+
+            &.active{
+              display: block;
+            }
+
+            .admin-avatar{
+              margin-top: 45px;
+            }
+            .shadow {
+              margin-left: 43px;
+            }
+          }
+        }
+        .login-container {
+          width: 555px;
+          float: right;
+
+          .nav-tabs > li {
+            background-color: #FFFFFF;
+
+            &.active {
+              > a {
+                background-color: #54b9cd;
+                color: #FFFFFF;
+              }
+            }
+            > a {
+              width: 185px;
+              line-height: 52px;
+              margin-right: 0;
+              border: none;
+              border-radius: inherit;
+              font-size: 18px;
+              color: #54b9cd;
+              text-align: center;
+              padding: 0;
+
+              .divider {
+                border-right: 1px solid #54b9cd;
+                height: 39px;
+                float: right;
+                margin-top: 6.5px;
+              }
+            }
+          }
+          .tab-content {
+            height: 260px;
+            background-image: url("../images/login/launchbackground.png");
+            background-size: 102% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+
+            .launch {
+              position: absolute;
+              right: -58px;
+              top: 83px;
+              cursor: pointer;
+            }
+
+            .tab-pane {
+
+              .form-horizontal {
+                padding-left: 65px;
+                width: 85%;
+                padding-top: 57px;
+
+                .form-group {
+                  margin: 0 0 15px 0;
+
+                  &.pw{
+                    margin-top: 35px;
+                  }
+
+                  label {
+                    width: 69px;
+                    text-align: left;
+                    font-size: 18px;
+                    color: #FFFFFF;
+                    font-weight: normal;
+                    float: left;
+                  }
+                  .input-container{
+                    width: 334px;
+                    float: left;
+                    color: #FFFFFF;
+
+                    input{
+                      background-image: url("../images/login/blanket.png");
+                      background-size: 102%;
+                      background-repeat: no-repeat;
+                      border: none;
+                      color: #FFFFFF;
+                      width: 334px;
+                      height: 50px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #8ad8e7;
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+  }
+}

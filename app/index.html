@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登陆-智汇</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/common.css -->
+    <link rel="stylesheet" href="styles/common.css">
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/login.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+      <header>
+        <a href="agency.html">
+          <img src="images/login/logo.png">
+        </a>
+      </header>
+      <div class="main">
+        <div class="login-wrapper">
+          <div class="role-container">
+            <div class="role administrator active">
+              <img class="admin-avatar" src="images/login/administrator.png">
+              <br>
+              <img class="shadow" src="images/login/shadow.png">
+            </div>
+            <div class="role headmaster">
+              <img class="admin-avatar" src="images/login/headmaster.png">
+              <br>
+              <img class="shadow" src="images/login/shadow.png">
+            </div>
+            <div class="role agency">
+              <img class="admin-avatar" src="images/login/agency.png">
+              <br>
+              <img class="shadow" src="images/login/shadow.png">
+            </div>
+          </div>
+          <div class="login-container">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation">
+                <a href="#agency" aria-controls="home" role="tab" data-toggle="tab">
+                  代理商<div class="divider"></div>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#headmaster" aria-controls="profile" role="tab" data-toggle="tab">
+                  园长<div class="divider"></div>
+                </a>
+              </li>
+              <li role="presentation" class="active">
+                <a href="#administrator" aria-controls="messages" role="tab" data-toggle="tab">
+                  管理员
+                </a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane" id="agency">...</div>
+              <div role="tabpanel" class="tab-pane" id="headmaster">...</div>
+              <div role="tabpanel" class="tab-pane active" id="administrator">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="username" class="control-label">用户名</label>
+                    <div class="input-container">
+                      <input type="text" class="form-control" id="username">
+                    </div>
+                  </div>
+                  <div class="form-group pw">
+                    <label for="inputPassword" class="control-label">密码</label>
+                    <div class="input-container">
+                      <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"></label>
+                    <div class="input-container">
+                      忘记密码?
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <img class="launch" src="images/login/launch.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Copyright © 2016-2022 智汇盒子 版权所有 沪ICP备12004928号-4
+      </div>
+    </div>
+
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/common.js -->
+    <script src="scripts/common.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/login.js -->
+    <script src="scripts/login.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

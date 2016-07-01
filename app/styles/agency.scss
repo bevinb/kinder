@@ -1,0 +1,200 @@
+.content-container {
+  background-color: #f5f9fb;
+  padding: 0 60px;
+
+  .search {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #b6c2c9;
+
+    .search-container {
+      height: 90px;
+      padding-top: 25px;
+      float: left;
+
+      .btn-group {
+        margin-right: 15px;
+
+        button {
+          width: 135px;
+          height: 40px;
+          line-height: 40px;
+          padding: 0;
+          border-radius: 20px;
+          background-color: #FFFFFF;
+          border: none;
+          font-size: 14px;
+          color: #a4a4a4;
+
+          &:hover, &:focus {
+            background-color: #c1c6c8;
+            color: #FFFFFF;
+          }
+        }
+
+      }
+      .search-input-group {
+        display: inline-block;
+        width: 300px;
+        vertical-align: middle;
+
+        .input-group {
+          position: relative;
+
+          button {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 40px;
+            border: none;
+            background-color: #54b9cd;
+            color: #FFFFFF;
+            width: 100px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+          ul.dropdown-menu {
+            min-width: 80px;
+            left: auto;
+            right: 0;
+            padding: 0;
+            margin: 0;
+            border: none;
+            background-color: #54b9cd;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+
+            > li {
+              > a {
+                color: #FFFFFF;
+                font-size: 14px;
+                line-height: 40px;
+
+                &:hover {
+                  background-color: #FFFFFF;
+                  color: #a4a4a4;
+                }
+              }
+            }
+          }
+          input {
+            height: 40px;
+            border: none;
+            box-shadow: none;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding-right:40px;
+          }
+          .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 8px;
+            z-index: 3;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .agency-count {
+      float: right;
+      line-height: 90px;
+      font-size: 14px;
+      color: #a4a4a4;
+
+      span {
+        font-size: 18px;
+        color: #54b9cd;
+      }
+    }
+  }
+  .agency-list {
+    width: 100%;
+    padding-top: 30px;
+
+    .agency-item {
+      width: 300px;
+      height: 275px;
+      float: left;
+      background-color: #FFFFFF;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      padding: 20px 0 0 16px;
+      border-bottom: 3px solid #54b9cd;
+
+      &.add-agency-container, &.add-kindergarten-container {
+        cursor: pointer;
+        border: none;
+        background-color: #e8f4f7;
+        text-align: center;
+        color: #54b9cd;
+        padding-top: 45px;
+
+        img {
+          margin-bottom: 10px;
+        }
+      }
+
+      .item-title-container {
+
+        .media {
+          border-bottom: 1px solid #dbdbdb;
+          padding-bottom: 10px;
+
+          .media-body {
+            h4 {
+              font-size: 18px;
+              color: #54b9cd;
+              font-weight: normal;
+            }
+            h5 {
+              font-weight: normal;
+              font-size: 14px;
+              color: #717171;
+            }
+          }
+          .media-right {
+            padding-right: 20px;
+
+            a {
+              .media-object {
+                display: none;
+
+                &.email-icon-normal {
+                  display: inline-block;
+                }
+              }
+              &:hover, &:focus {
+                .media-object {
+                  display: none;
+
+                  &.email-icon-click {
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+      .item-content-container {
+        padding-top: 15px;
+
+        .line {
+          line-height: 50px;
+          font-size: 14px;
+          color: #a4a4a4;
+
+          img {
+            margin-right: 15px;
+          }
+          .name {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+

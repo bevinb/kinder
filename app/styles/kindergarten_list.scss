@@ -1,0 +1,10 @@
+@import "variable";
+
+.media {
+  .media-heading {
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}
